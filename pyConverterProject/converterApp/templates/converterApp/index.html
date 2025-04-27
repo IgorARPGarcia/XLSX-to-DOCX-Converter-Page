@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter Page</title>
+    <link rel="stylesheet" href="{% static 'converterApp/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Faculty+Glyphic&family=Overpass:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="{% static 'converterApp/ts/script.js' %}" defer></script>
+</head>
+<body>
+    <header>
+        <div class="headerDiv">
+            <div class="leftHeader">
+                <h1 class="titlePage">C<img width="50" height="50" src="{% static 'converterApp/images/arrow-2-circlepath-circle-fill-svgrepo-com (2).svg' %}" alt="" class="svgImg">NVERTER</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="h1Config">Convert XLSX to DOCX</h1>
+        <div class="iconsDiv">
+            <img width="70px" height="70px" src="{% static 'converterApp/images/xlsxIcon.svg' %}" alt="" class="xlsxIcon">
+            <img width="70px" height="70px" src="{% static 'converterApp/images/arrowIcon.svg' %}" alt="">
+            <img width="70px" height="70px" src="{% static 'converterApp/images/docxIcon.svg' %}" alt="" class="docxIcon">
+        </div>
+        <div id="dropArea">
+            <p>Drag and drop an XLSX file here or</p>
+            <button id="fileB" class="fileB">Select XLSX File</button>
+            <input type="file" id="fileElement" accept=".xlsx" style="display:none;">
+        </div>
+        <div id="downloadBDiv" class="downloadBDiv" style="display: none;">
+            <button id="downloadB" class="downloadB">Download DOCX</button>
+        </div>
+    </main>
+    <footer>Converter © 2025, All Rights Reserved.</footer>
+</body>
+</html>
