@@ -1,3 +1,3 @@
 <div align=center>
-  <img src=""/>
+  <img src="./converterPage.gif"/>
 </div>
